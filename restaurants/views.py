@@ -7,16 +7,16 @@ def restaurant_list(request):
     context = {
         "my_list":[
             {
+                'name':'Macdonalds',
+                'food_type':'Junk Food',
+            },
+            {
+                'name':'99 Grill',
+                'food_type':'Burgers',
+            },
+            {
                 'name':'Subway',
-                'food_type':'Sandwiches.',
-            },
-            {
-                'name':'Steers',
-                'food_type':'Burgers, Fries, and Pasta.',
-            },
-            {
-                'name':'Backyard',
-                'food_type':'Been there, done that...',
+                'food_type':'Healthy Food',
             },
         ]
     }
@@ -26,8 +26,8 @@ def restaurant_list(request):
 def restaurant_detail(request):
     context = {
         "my_object":{
-                        'name':'Subway',
-                        'food_type':'Sandwiches.',
+                        'name':'99 Grill',
+                        'food_type':'Burgers.',
                     },
     }
     return render(request, 'detail.html', context)
