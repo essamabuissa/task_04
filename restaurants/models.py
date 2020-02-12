@@ -5,5 +5,5 @@ import datetime
 class Restaurant(models.Model):
     name = models.CharField(max_length = 30)
     description = models.TextField()
-    opening_time = models.TimeField(auto_now_add = True)
-    closing_time = models.TimeField(auto_now_add = True)
+    opening_time = models.TimeField()
+    closing_time = models.TimeField()
